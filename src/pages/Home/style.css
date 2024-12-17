@@ -86,3 +86,36 @@ h1 {
   }
 
 }
+
+.watermark {
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(0.25turn, #363653, #48456C);
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  opacity: 0.5;
+}
+
+.watermark:hover {
+  opacity: 1;
+}
+
+.watermark ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.watermark ul li {
+  margin-bottom: 10px;
+}
+
+
+.watermark ul li a {
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
+}

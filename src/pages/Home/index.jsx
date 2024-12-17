@@ -17,7 +17,7 @@ function Home() {
     const usersFromAPI = await api.get('/usuarios')
 
     setUsers(usersFromAPI.data)
-    
+
   }
 
   // Função para verificar se o email já existe
@@ -66,9 +66,9 @@ function Home() {
       <form action="">
         {errorMessage && <p className='error'>{errorMessage}</p>}
         <h1>Cadastro de usuário</h1>
-        <input ref={inputName} placeholder='Nome' type="text" name='name' /> 
-        <input ref={inputAge} placeholder='Idade' type="text" name='age' /> 
-        <input ref={inputEmail} placeholder='E-mail' type="email" name='email' /> 
+        <input ref={inputName} placeholder='Nome' type="text" name='name' />
+        <input ref={inputAge} placeholder='Idade' type="text" name='age' />
+        <input ref={inputEmail} placeholder='E-mail' type="email" name='email' />
         <button type="button" onClick={createUsers}>Cadastrar</button>
       </form>
 
@@ -86,6 +86,20 @@ function Home() {
           </div>
         ))}
       </div>
+
+      <div className="watermark">
+        <p>Desenvolvido por <b>Ednilson António</b></p>
+        <p>Código fonte (Deixe uma estrela):</p><br />
+        <ul>
+          <li>
+            Frontend - <a href="https://github.com/EdnilsonAntonio/UserRegister---Frontend">Ver repositório</a>
+          </li>
+          <li>
+            Backend - <a href="https://github.com/EdnilsonAntonio/UserRegister---Backend">Ver repositório</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
   )
 }
